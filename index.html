@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Food Delivery App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="navbar">
+    Food Delivery App
+  </div>
+
+  <div class="container">
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+      <h2>Pizza</h2>
+      <p class="price">₹299</p>
+      <button onclick="addToCart(299)">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+      <h2>Burger</h2>
+      <p class="price">₹199</p>
+      <button onclick="addToCart(199)">
+        Add to Cart
+      </button>
+    </div>
+
+    <div class="card">
+      <img src="https://images.unsplash.com/photo-1621996346565-e3dbc646d9a9">
+      <h2>Pasta</h2>
+      <p class="price">₹249</p>
+      <button onclick="addToCart(249)">
+        Add to Cart
+      </button>
+    </div>
+
+  </div>
+
+  <div class="cart">
+    Total Price: ₹<span id="total">0</span>
+  </div>
+
+  <button class="order-btn" onclick="placeOrder()">
+    Place Order
+  </button>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
